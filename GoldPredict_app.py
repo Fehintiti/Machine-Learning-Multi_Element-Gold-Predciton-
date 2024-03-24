@@ -9,9 +9,15 @@ import streamlit as st
 import numpy as np
 import os
 
-scaler_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\scaler.joblib"
-pca_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\pca.joblib"
-model_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\Ramdom_Gold_model.joblib"
+working_dir = os.path.dirname(os.path.abspath(__file__))
+
+#scaler_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\scaler.joblib"
+#pca_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\pca.joblib"
+#model_path = r"C:\Users\USER\OneDrive - Thor Exploration\Desktop\Streamlit_Gold Prediction\Ramdom_Gold_model.joblib"
+
+scaler_path = os.path.join(working_dir, "scaler.joblib")
+pca_path = os.path.join(working_dir, "pca.joblib")
+model_path = os.path.join(working_dir, "Ramdom_Gold_model.joblib")
 
 # Load the scaler, PCA, and model using their direct paths
 scaler = load(scaler_path)
