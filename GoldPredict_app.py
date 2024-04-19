@@ -116,7 +116,7 @@ for index, (symbol, full_name) in enumerate(elements_full_names.items()):
 
 #  taking input values through Streamlit's input methods
 # This is a placeholder for where you'd collect or upload new data
-input_values = st.text_input('Enter values separated by commas:')
+#input_values = st.text_input('Enter values separated by commas:')
 
 if st.button('Predict'):
     # Process the input values
