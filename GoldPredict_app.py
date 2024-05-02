@@ -28,8 +28,8 @@ model = load(model_path)
 # Project Introduction
 st.header('Project Introduction')
 st.write("""
-We aim to build a predictive model that can accurately predict the presence of gold in the rock samples based on the results of past historic Multi-element assay data. 
-Please enter the required input values in the designated fields and press the 'Predict' button to see the results.
+The objective of this project is to develop a predictive model that can accurately determine the presence of gold in rock samples using historical multi-element assay data.
+Users are requested to enter the necessary input values into the designated fields and click the 'Predict' button to view the results.
 """)
 
 # Instructions
@@ -46,11 +46,14 @@ st.title('Multi-Element Gold Prediction App')
 
 # Mapping of elements to their full names
 elements_full_names = {
-    'Al': 'Aluminum', 'As': 'Arsenic', 'B': 'Boron', 'Ba': 'Barium', 'Be': 'Beryllium', 'Bi': 'Bismuth', 'Ca': 'Calcium',
-    'Cd': 'Cadmium', 'Co': 'Cobalt', 'Cr': 'Chromium', 'Cu': 'Copper', 'Fe': 'Iron', 'Ga': 'Gallium', 'Hg': 'Mercury',
-    'K': 'Potassium', 'La': 'Lanthanum', 'Mg': 'Magnesium', 'Mn': 'Manganese', 'Mo': 'Molybdenum', 'Na': 'Sodium',
-    'Ni': 'Nickel', 'P': 'Phosphorus', 'Pb': 'Lead', 'S': 'Sulfur', 'Sb': 'Antimony', 'Sc': 'Scandium', 'Sr': 'Strontium',
-    'Th': 'Thorium', 'Ti': 'Titanium', 'Tl': 'Thallium', 'V': 'Vanadium', 'W': 'Tungsten', 'Zn': 'Zinc', 'Zr': 'Zirconium'
+    'Al': 'Aluminum', 'As': 'Arsenic', 'Ag': 'Silver',  
+    'B': 'Boron', 'Ba': 'Barium', 'Be': 'Beryllium', 'Bi': 'Bismuth', 'Ca': 'Calcium',
+    'Cd': 'Cadmium', 'Co': 'Cobalt', 'Cr': 'Chromium', 'Cu': 'Copper', 'Fe': 'Iron',
+    'Ga': 'Gallium', 'Hg': 'Mercury', 'K': 'Potassium', 'La': 'Lanthanum', 'Mg': 'Magnesium',
+    'Mn': 'Manganese', 'Mo': 'Molybdenum', 'Na': 'Sodium', 'Ni': 'Nickel', 'P': 'Phosphorus',
+    'Pb': 'Lead', 'S': 'Sulfur', 'Sb': 'Antimony', 'Sc': 'Scandium', 'Sr': 'Strontium',
+    'Th': 'Thorium', 'Ti': 'Titanium', 'Tl': 'Thallium', 'V': 'Vanadium', 'W': 'Tungsten',
+    'Zn': 'Zinc', 'Zr': 'Zirconium'
 }
 
 # Elements measured in percentage
